@@ -1,7 +1,34 @@
 # ST10538709
 Portfolio of evidence website
+
+
+
+ 
+
+Table of Contents 
+WEBSITE	CHOICE	2	
+	BUSINESS	NAME	2	
+	BUSINESS	DESCRIPTION	2	
+	REASONS	FOR	CHOOSING	THIS	BUSINESS	2	
+WEBSITE	ASSETS	3	
+WEBPAGES	AND	CONTENT	4	
+REFERENCES	5	
+
+
+
+
+
+
+
+
+
+
+
+
+
 Website Choice 
 Name: Novamobile
+Website link: https://github.com/Zimasile44/ST10538709/tree/main
 Organisation Description: 
 The name of the business is Novamobile. The business offers new and pre-owned phones and laptops for all sorts of customers at affordable prices for those who have strict budgets.
 
@@ -107,7 +134,7 @@ Image source: PNGImg			Image source: weFix
   Picture 3
 	  Picture 4
 
-  Picture 5 Picture6
+ Picture 5 Picture6
 Images source: PnGtree
 
 Picture 6				picture 7
@@ -136,7 +163,6 @@ Picture 15							Picture 16
 
  Picture 23  Picture 24 Picture 25 Picture 26
  Picture 27
- Picture 28
 
 Website Pages and Content 
 A.	Home
@@ -222,6 +248,7 @@ PNGImg. (2026). PNG images and graphics. Available at: https://pngimg.com
 weFix. (2026). Mobile device services and images. Available at: https://wefix.co.za
 PNGTREE. (2026). Free PNG images and graphics. Available at: https://pngtree.com
 Google Images. (2026). Image search for mobile devices and laptops. Available at: https://images.google.com
+I used CSS for the styling and JavaScript for the carousel functionality.
 
 
 
@@ -258,8 +285,59 @@ o	External JavaScript file linked
 o	The New phones and laptops and the pre-owned phones and laptops pages are removed in favour of a products page.
 o	Branded images removed for generic ones. 
 
+Full description of the part 2 improvements Part 1 to Part 2:
+
+Website Part 1	Website Part 2
+New phones and laptops.html	Merged into Products.html
+Pre-owned phones and laptops.html	Merged into Products.html
+Repairs and returns.html	Removed as standalone page
+Terms and conditions.html	Removed as standalone page
+Track order.html	Renamed to Track_order.html
+Novamobile.html, zim.html, Track.html	Removed (extra/unused pages)
+(no Contact page)	New Contact.html added
+CSS/Styles.css + CSS/styles2.css	Merged into single CSS/Styles.css
+(no JS)	New js/script.js added
+
+Home Page
+Navigation bar — Changed from grey button-style links (Home, Accessories, Track order, Returns and repairs) to a clean nav bar with links: Home, Products, Accessories, Track order. "Returns and repairs" was removed from the nav.
+Main content — The two clickable section boxes (New Phones & Laptops, Pre-owned Phones & Laptops) were completely replaced with a full-width image carousel/slideshow featuring 5 slides with headings and "View Products" call-to-action buttons linking to Products.html.
+Header — Added the brand name "Novamobile" as an <h1> and a slogan "Tech Made Accessible" above the logo.
+Footer quick links — Changed from (Home, Terms & Conditions, About, Repairs & Returns) to (Home, About, Contact).
+Contact details — Instagram handle corrected from Novamobile_tech → Novamobile. Phone numbers reformatted with dashes. Email corrected from Nomobile@gmail.com → Novamobile@gmail.com. Footer logo switched from an external icons8 URL to the local Images/logo.png.
+
+Products Page (was 2 separate pages)
+Structure — The two separate pages (New phones and laptops.html and Pre-owned phones and laptops.html) were merged into a single Products.html.
+New phones & laptops (old page) — Previously had no navigation header, no product names, and no prices — just images in a flat layout using placeholder .png images pulled from the old set. The new Products page organises these into a CSS grid with proper sections (Phones / Laptops), product names, and prices listed (e.g. "Mobile 17 Pro - R20000", "HC Spectre x360 - R6000"). Image files were updated from .png to .jpg for phone images.
+Pre-owned phones & laptops (old page) — Previously used generic external icons8 icon URLs as placeholders (no real product images at all). The new Products page replaces these with actual local product images (Pre1.jpg, pre3.jpg, old 1.png, etc.) and adds product names and prices (e.g. "iMobile 15 (Pre-Owned) - R7000", "HC EliteBook (Pre-Owned) - R5000").
+
+Accessories Page
+Old page — Used external icons8 icon images (watches, phone cases, headphones, chargers) as placeholders with no prices, laid out in an inline block with no real structure.
+New page — Replaced with 11 actual product listings using real local images (smartwatches, earbuds, headphones, phone cases), all displayed in a proper CSS grid with item names and prices (e.g. "Smart-watch - R2000", "Beat Headphones - R1000", "Clear Silicone Case - R400"). A consistent header with the site nav was also added.
+________________________________________
+About Page
+Old page — Had only 3 short paragraphs of body text, no header/nav, styles embedded inline, and used an external icons8 image for the footer logo.
+New page — Significantly expanded with dedicated sections: About Us, Vision Statement, Mission Statement, Meet Our Team (with a real team photo Employees.jpg), and Terms and Conditions (the content from the old standalone T&C page is now embedded here). The page also gained the consistent site header and nav bar.
+________________________________________
+ Repairs & Returns / Contact Page
+Old — A standalone Repairs and returns.html page existed with no navigation header.
+New — The repairs & returns content was moved into Contact.html, which now combines the Repairs and Returns information (return policy, warranty details, process steps, support email/phone) together with a contact form (name, last name, email, message fields with a submit button). The page no longer exists as its own file in the nav.
+
+Track Order Page
+Content is nearly identical (same input field, Express Delivery info, courier number). Key changes: the page now uses the shared external CSS file and script, has the consistent header/nav added, and the footer was updated to match the rest of the site.
+
+CSS / Styling
+Old — Each page had its own inline <style> block embedded directly in the HTML, with two CSS files (Styles.css and styles2.css) that were inconsistently used.
+New — All pages now link to a single shared CSS/Styles.css file covering the carousel, grid layout, header, nav, footer, product cards, form styling, and page-specific classes. This creates a consistent visual identity across the whole site.
+
+ JavaScript
+A new js/script.js file was added (linked on every page) to power the home page image carousel/slideshow — this did not exist at all in Website Part 1.
 
 
-Gallery: New Images
+
+
+Gallery: New Images for part 2
            
        
+
+
+
